@@ -16,6 +16,7 @@ solveQuadraticEquation a b c = ((b + sqrt d) / 2 * a, Just ((b - sqrt d) / 2 * a
 -- 2
 --
 sumAndCount :: Integral a => a -> (a, Int)
+sumAndCount 0 = (0, 1)
 sumAndCount number = (sum d, length d)
     where
         d = digits . abs $ number
